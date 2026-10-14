@@ -1,0 +1,13 @@
+.kb-board { display: flex; gap: 10px; height: 100%; }
+.kb-col { flex: 1; display: flex; flex-direction: column; gap: 8px; background: var(--muted-bg, #2d2f31); border-radius: 10px; padding: 8px; min-width: 0; }
+.kb-col.drop { outline: 2px dashed var(--accent2, #4a90e2); }
+.kb-col-h { font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.3px; opacity: 0.8; }
+.kb-cards { flex: 1; display: flex; flex-direction: column; gap: 6px; overflow: auto; min-height: 20px; }
+.kb-card { background: var(--card-bg, #27292c); border-radius: 7px; padding: 8px; font-size: 0.82rem; cursor: grab; display: flex; gap: 6px; }
+.kb-card.dragging { opacity: 0.4; }
+.kb-card .t { flex: 1; word-break: break-word; }
+.kb-card .x { cursor: pointer; opacity: 0.5; }
+.kb-card .x:hover { opacity: 1; color: #e74c3c; }
+.kb-add { display: flex; gap: 4px; }
+.kb-add input { flex: 1; min-width: 0; padding: 6px; border: 1px solid var(--muted-bg, #444); border-radius: 6px; background: var(--surface, #1e1e1e); color: var(--text, #eee); font-size: 0.78rem; }
+.kb-add button { padding: 6px 9px; border: 0; border-radius: 6px; background: var(--accent2, #4a90e2); color: #fff; cursor: pointer; }
